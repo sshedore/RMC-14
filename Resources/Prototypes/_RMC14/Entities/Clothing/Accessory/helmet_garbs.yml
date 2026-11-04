@@ -578,3 +578,29 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/movie_ticket.rsi
       state: helmet
+
+- type: entity
+  parent: RMCHelmetGarbToggleableBase
+  id: RMCHelmetGarbParkaHood
+  name: parka hood
+  description: A fur-lined hood that fits over a helmet. Can be pulled up or down.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/HelmetGarb/parka_hood.rsi
+    state: icon
+  - type: Item
+    sprite: _RMC14/Objects/Clothing/HelmetGarb/parka_hood.rsi
+  - type: HelmetAccessory
+    drawOrder: 10
+    rsi:
+      sprite: _RMC14/Objects/Clothing/HelmetGarb/parka_hood.rsi
+      state: helmet
+    toggledRsi:
+      sprite: _RMC14/Objects/Clothing/HelmetGarb/parka_hood.rsi
+      state: helmet-down
+    hatRsi:
+      sprite: _RMC14/Objects/Clothing/HelmetGarb/parka_hood.rsi
+      state: hat
+    hatToggledRsi:
+      sprite: _RMC14/Objects/Clothing/HelmetGarb/parka_hood.rsi
+      state: hat-down
