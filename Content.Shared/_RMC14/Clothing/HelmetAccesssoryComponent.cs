@@ -22,12 +22,4 @@ public sealed partial class HelmetAccessoryComponent : Component
 
     [DataField, AutoNetworkedField]
     public Vector2 Offset;
-
-    /// <summary>
-    /// Controls the order accessories are drawn on the helmet.
-    /// Higher values draw on top; lower values, including negatives, draw underneath.
-    /// Accessories with the same value keep the order they were inserted in.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public int DrawOrder;
 }
